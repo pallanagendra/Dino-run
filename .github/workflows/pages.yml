@@ -1,0 +1,43 @@
+# Publishes the playable game (www/) to GitHub Pages:
+#   https://pallanagendra.github.io/Dino-run/
+# Runs on every push to main that changes the game, or on demand from the Actions tab.
+name: Deploy game to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "www/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out
+        uses: actions/checkout@v6
+
+      - name: Set up Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload the game
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: www
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5

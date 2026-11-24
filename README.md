@@ -14,7 +14,18 @@ The whole game is one HTML5 canvas file (`www/index.html`) with no external asse
 | Sound on/off | Speaker button | M |
 | Music on/off | Note button | |
 
-- **3 hearts.** Bumping a hurdle costs a heart, knocks the hurdle over and gives a short "blink" safety window. A pink heart sometimes floats in to refill one.
+- **Pick your dino.** Six colours on the start screen: Mint, Sky, Sunny, Berry, Grape and Coral. The choice is saved.
+- **Obstacles arrive gradually**, so the start stays easy:
+
+  | From | Obstacle | How to pass |
+  | --- | --- | --- |
+  | Start | Striped hurdle (low / mid / tall), rock, traffic cone | Jump |
+  | 12 s | Hay bale, fallen log (wide: jump a little earlier), flower pot | Jump |
+  | 25 s | Double hurdles | One long jump |
+  | 25 s | Buzzy bee (flies at head height) | **Stay on the ground** and run under; a row of stars waits under it |
+  | 35 s | Stacked hay bales (tall) | Hold the jump, or double jump |
+
+- **3 hearts.** Bumping an obstacle costs a heart and gives a short "blink" safety window. Hurdles, cones and pots tip over, bales and logs wobble, and the bee buzzes away. A pink heart sometimes floats in to refill one.
 - **Score** = distance + 10 per star. Catching stars in a row plays a rising chime.
 - Speed rises gently and caps at a calm maximum. Best score, sound and music settings are saved on the device.
 

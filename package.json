@@ -1,0 +1,21 @@
+{
+  "name": "dino-run",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dino Run - a calm 2D runner for iOS and Android",
+  "scripts": {
+    "sync": "cap sync",
+    "android": "cap sync android && cap open android",
+    "ios": "cap sync ios && cap open ios",
+    "assets": "capacitor-assets generate --ios --android --iconBackgroundColor '#7ec8f7' --iconBackgroundColorDark '#1b2347' --splashBackgroundColor '#7ec8f7' --splashBackgroundColorDark '#1b2347'"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/core": "^8.6.2",
+    "@capacitor/ios": "^8.6.2"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^4.0.0",
+    "@capacitor/cli": "^8.6.2"
+  }
+}

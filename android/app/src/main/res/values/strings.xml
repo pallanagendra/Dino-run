@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Dino Run</string>
+    <string name="title_activity_main">Dino Run</string>
+    <string name="package_name">com.dinorun.app</string>
+    <string name="custom_url_scheme">com.dinorun.app</string>
+</resources>

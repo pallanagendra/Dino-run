@@ -1,0 +1,8 @@
+{
+  "appId": "com.dinorun.app",
+  "appName": "Dino Run",
+  "webDir": "www",
+  "backgroundColor": "#7ec8f7",
+  "ios": { "contentInset": "never", "backgroundColor": "#7ec8f7" },
+  "android": { "backgroundColor": "#7ec8f7" }
+}

@@ -2,6 +2,8 @@
 
 A calm 2D runner for kids and grown-ups. A friendly dino runs through a meadow, hops striped hurdles and catches golden stars, while the sky slowly turns from day to sunset to night and back.
 
+**▶ Play it in your browser:** https://pallanagendra.github.io/Dino-run/ (updates automatically when `main` changes).
+
 The whole game is one HTML5 canvas file (`www/index.html`) with no external assets: graphics are drawn in code and every sound is synthesized. [Capacitor](https://capacitorjs.com) wraps it as a native iOS app and a native Android app.
 
 ## How to play
@@ -74,6 +76,10 @@ In Xcode, select the **App** target → **Signing & Capabilities**, choose your 
 ```bash
 npx cap sync           # copies www/index.html into both native apps
 ```
+
+### Web version (GitHub Pages)
+
+Every push to `main` that changes `www/` redeploys the browser version through `.github/workflows/pages.yml`. You can also run it by hand from the repo's **Actions** tab → *Deploy game to GitHub Pages* → **Run workflow**. One-time setup: repo **Settings → Pages → Source: GitHub Actions**.
 
 ### Icons and splash screens
 
